@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="km">
 <head>
@@ -5,61 +6,225 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#160b18">
 <title>Our First Month ❤️</title>
+
 <style>
-:root{--pink:#ff6fae;--cream:#fff0f6}
-*{box-sizing:border-box}
-body{
- margin:0;min-height:100vh;overflow-x:hidden;color:var(--cream);
- font-family:system-ui,-apple-system,"Noto Sans Khmer",sans-serif;
- background:radial-gradient(circle at 50% 20%,#54213e,#241126 55%,#100912);
+:root {
+  --pink: #ff6fae;
+  --cream: #fff0f6;
 }
-.stars,.hearts{position:fixed;inset:0;pointer-events:none;overflow:hidden}
-.stars span{position:absolute;color:#ffd6e7;animation:twinkle 3s infinite}
-@keyframes twinkle{50%{opacity:.15;transform:scale(.7)}}
-.wrap{width:min(92%,560px);margin:auto;padding:42px 0 60px;text-align:center;position:relative;z-index:1}
-.eyebrow{letter-spacing:3px;font-size:11px;color:#ffb8d5}
-h1{font-size:clamp(34px,9vw,58px);line-height:1.12;color:white;text-shadow:0 0 25px #ff5da7aa}
-.sub{color:#f8cddd;line-height:1.8;font-size:15px}
-.card{margin:26px auto;padding:26px 22px;border:1px solid #ff9bc744;border-radius:26px;background:#ffffff0d;backdrop-filter:blur(10px);box-shadow:0 18px 55px #0005}
-.big-heart{font-size:62px;animation:beat 1.2s infinite}
-@keyframes beat{50%{transform:scale(1.14)}}
-button{border:0;border-radius:999px;padding:14px 24px;background:linear-gradient(100deg,#ff579e,#ff9fc4);color:#321225;font-weight:800;font-size:15px;margin:8px}
-.hidden{display:none}
-.letter{text-align:left;line-height:2;color:#ffeaf2;white-space:pre-line}
-.photo-box{margin-top:20px}
-.photo-box img{width:100%;height:300px;object-fit:cover;border-radius:18px;border:1px solid #ff9bc7aa;box-shadow:0 8px 30px #0005}
-.photo-caption{color:#ffb8d5;margin:12px}
-.timeline{display:grid;gap:12px;text-align:left;margin-top:20px}
-.moment{border-left:3px solid #ff80b5;padding:10px 14px;background:#ffffff09;border-radius:0 12px 12px 0}
-.moment b{color:#ffb8d5;display:block}
-.music{margin-top:22px;padding:16px;border:1px solid #ff9bc744;border-radius:18px}
-audio{width:100%;margin-top:12px}
-footer{margin-top:30px;color:#d9a9be;font-size:12px}
-.float{position:absolute;bottom:-40px;font-size:20px;animation:rise 7s linear forwards}
-@keyframes rise{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  color: var(--cream);
+  font-family: system-ui, -apple-system, "Noto Sans Khmer", sans-serif;
+  background: radial-gradient(circle at 50% 20%, #54213e, #241126 55%, #100912);
+}
+
+.stars, .hearts {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.stars span {
+  position: absolute;
+  color: #ffd6e7;
+  animation: twinkle 3s infinite;
+}
+
+@keyframes twinkle {
+  50% {
+    opacity: .15;
+    transform: scale(.7);
+  }
+}
+
+.wrap {
+  width: min(92%, 560px);
+  margin: auto;
+  padding: 42px 0 60px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.eyebrow {
+  letter-spacing: 3px;
+  font-size: 11px;
+  color: #ffb8d5;
+}
+
+h1 {
+  font-size: clamp(34px, 9vw, 58px);
+  line-height: 1.12;
+  color: white;
+  text-shadow: 0 0 25px #ff5da7aa;
+}
+
+.sub {
+  color: #f8cddd;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.card {
+  margin: 26px auto;
+  padding: 26px 22px;
+  border: 1px solid #ff9bc744;
+  border-radius: 26px;
+  background: #ffffff0d;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 18px 55px #0005;
+}
+
+.big-heart {
+  font-size: 62px;
+  animation: beat 1.2s infinite;
+}
+
+@keyframes beat {
+  50% {
+    transform: scale(1.14);
+  }
+}
+
+button {
+  border: 0;
+  border-radius: 999px;
+  padding: 14px 24px;
+  background: linear-gradient(100deg, #ff579e, #ff9fc4);
+  color: #321225;
+  font-weight: 800;
+  font-size: 15px;
+  margin: 8px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.letter {
+  text-align: left;
+  line-height: 2;
+  color: #ffeaf2;
+  white-space: pre-line;
+}
+
+.photo-box {
+  margin-top: 20px;
+}
+
+.photo-box img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 1px solid #ff9bc7aa;
+  box-shadow: 0 8px 30px #0005;
+}
+
+.photo-caption {
+  color: #ffb8d5;
+  margin: 12px;
+}
+
+.timeline {
+  display: grid;
+  gap: 12px;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.moment {
+  border-left: 3px solid #ff80b5;
+  padding: 10px 14px;
+  background: #ffffff09;
+  border-radius: 0 12px 12px 0;
+}
+
+.moment b {
+  color: #ffb8d5;
+  display: block;
+}
+
+.music {
+  margin-top: 22px;
+  padding: 16px;
+  border: 1px solid #ff9bc744;
+  border-radius: 18px;
+}
+
+footer {
+  margin-top: 30px;
+  color: #d9a9be;
+  font-size: 12px;
+}
+
+.float {
+  position: absolute;
+  bottom: -40px;
+  font-size: 20px;
+  animation: rise 7s linear forwards;
+}
+
+@keyframes rise {
+  to {
+    transform: translateY(-110vh) rotate(25deg);
+    opacity: 0;
+  }
+}
 </style>
 </head>
+
 <body>
+
 <div class="stars" id="stars"></div>
 <div class="hearts" id="hearts"></div>
 
 <main class="wrap">
-<div class="eyebrow">A little surprise for you</div>
-<h1>Happy 1 Month<br>Anniversary ❤️</h1>
-<p class="sub">ថ្ងៃពិសេសតូចមួយ សម្រាប់មនុស្សពិសេសម្នាក់ ❤️</p>
 
-<section class="card" id="intro">
-<div class="big-heart">💗</div>
-<h2>មានអ្វីមួយចង់ប្រាប់អ្នក...</h2>
-<p class="sub">ចុចប៊ូតុងខាងក្រោម ដើម្បីបើកសារតូចមួយនេះ។</p>
-<button onclick="openSurprise()">បើក Surprise 💌</button>
-</section>
+  <div class="eyebrow">A little surprise for you</div>
 
-<section class="card hidden" id="surprise">
-<div class="eyebrow">To my favorite person</div>
-<h2 style="color:#ffc2da">សួស្តីខួប 1 ខែរបស់យើង 💞</h2>
+  <h1>
+    Happy 1 Month<br>
+    Anniversary ❤️
+  </h1>
 
-<div class="letter">
+  <p class="sub">
+    ថ្ងៃពិសេសតូចមួយ សម្រាប់មនុស្សពិសេសម្នាក់ ❤️
+  </p>
+
+  <section class="card" id="intro">
+    <div class="big-heart">💗</div>
+
+    <h2>មានអ្វីមួយចង់ប្រាប់អ្នក...</h2>
+
+    <p class="sub">
+      ចុចប៊ូតុងខាងក្រោម ដើម្បីបើកសារតូចមួយនេះ។
+    </p>
+
+    <button onclick="openSurprise()">
+      បើក Surprise 💌
+    </button>
+  </section>
+
+  <section class="card hidden" id="surprise">
+
+    <div class="eyebrow">To my favorite person</div>
+
+    <h2 style="color:#ffc2da">
+      សួស្តីខួប 1 ខែរបស់យើង 💞
+    </h2>
+
+    <div class="letter">
 អរគុណដែលបានចូលមកក្នុងជីវិតខ្ញុំ។
 មួយខែនេះ ប្រហែលជាមិនយូរទេ ប៉ុន្តែវាមានអត្ថន័យចំពោះខ្ញុំខ្លាំងណាស់។
 
@@ -67,75 +232,139 @@ footer{margin-top:30px;color:#d9a9be;font-size:12px}
 រៀនយល់ចិត្តគ្នា គាំទ្រគ្នា និងញញឹមជាមួយគ្នាបន្តទៀត។
 
 Happy 1 Month Anniversary! ❤️
-</div>
+    </div>
 
-<div class="photo-box">
-<h3 style="color:#ffb8d5">📸 Our Memories</h3>
-<img id="slideshow" src="photo1.jpg" alt="Our memories">
-<p class="photo-caption">Every picture holds a little memory 💗</p>
-</div>
+    <div class="photo-box">
+      <h3 style="color:#ffb8d5">📸 Our Memories</h3>
 
-<div class="music">
-<h3 style="color:#ffb8d5">🎵 Our Song</h3>
-<p class="sub">ចុច Play ដើម្បីស្តាប់បទចម្រៀងរបស់យើង</p>
-<audio controls loop preload="none">
-<source src="Song.mp3" type="audio/mpeg">
-កម្មវិធីរបស់អ្នកមិនអាចចាក់បទនេះបានទេ។
-</audio>
-</div>
+      <img
+        id="slideshow"
+        src="photo1.jpg"
+        alt="Our memories"
+      >
 
-<div class="timeline">
-<div class="moment"><b>✨ The beginning</b>ថ្ងៃដែលរឿងរ៉ាវរបស់យើងចាប់ផ្តើម</div>
-<div class="moment"><b>💗 Little moments</b>រឿងតូចៗដែលធ្វើឲ្យថ្ងៃធម្មតាក្លាយជាថ្ងៃពិសេស</div>
-<div class="moment"><b>🌷 More to come</b>សង្ឃឹមថានឹងមានអនុស្សាវរីយ៍ល្អៗជាច្រើនទៀត</div>
-</div>
+      <p class="photo-caption">
+        Every picture holds a little memory 💗
+      </p>
+    </div>
 
-<p style="margin-top:24px;color:#ffb8d5;font-weight:700">You are special to me. 💖</p>
-<button onclick="showFinal()">មានសារចុងក្រោយមួយទៀត...</button>
-<p id="final" class="hidden" style="line-height:1.9;color:white;margin-top:20px">
-មិនចាំបាច់ជាថ្ងៃធំដុំទេ គ្រាន់តែមានអ្នកនៅក្នុងថ្ងៃធម្មតាៗ ក៏ធ្វើឲ្យវាពិសេសបានហើយ។<br>
-<span style="font-size:25px">I’m glad it’s us. ❤️</span>
-</p>
-</section>
+    <div class="music">
+      <h3 style="color:#ffb8d5">🎵 Our Song</h3>
 
-<footer>Made with love • Our little story</footer>
+      <p class="sub">
+        A special song for you ❤️
+      </p>
+
+      <audio id="ourSong" loop preload="auto">
+        <source src="Song.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+
+    <div class="timeline">
+
+      <div class="moment">
+        <b>✨ The beginning</b>
+        ថ្ងៃដែលរឿងរ៉ាវរបស់យើងចាប់ផ្តើម
+      </div>
+
+      <div class="moment">
+        <b>💗 Little moments</b>
+        រឿងតូចៗដែលធ្វើឲ្យថ្ងៃធម្មតាក្លាយជាថ្ងៃពិសេស
+      </div>
+
+      <div class="moment">
+        <b>🌷 More to come</b>
+        សង្ឃឹមថានឹងមានអនុស្សាវរីយ៍ល្អៗជាច្រើនទៀត
+      </div>
+
+    </div>
+
+    <p style="margin-top:24px;color:#ffb8d5;font-weight:700">
+      You are special to me. 💖
+    </p>
+
+    <button onclick="showFinal()">
+      មានសារចុងក្រោយមួយទៀត...
+    </button>
+
+    <p id="final" class="hidden" style="line-height:1.9;color:white;margin-top:20px">
+      មិនចាំបាច់ជាថ្ងៃធំដុំទេ គ្រាន់តែមានអ្នកនៅក្នុងថ្ងៃធម្មតាៗ ក៏ធ្វើឲ្យវាពិសេសបានហើយ។<br>
+
+      <span style="font-size:25px">
+        I’m glad it’s us. ❤️
+      </span>
+    </p>
+
+  </section>
+
+  <footer>
+    Made with love • Our little story
+  </footer>
+
 </main>
 
 <script>
-const stars=document.getElementById('stars');
-for(let i=0;i<35;i++){
- const s=document.createElement('span');
- s.textContent='✦';
- s.style.left=Math.random()*100+'%';
- s.style.top=Math.random()*100+'%';
- s.style.fontSize=(8+Math.random()*10)+'px';
- s.style.animationDelay=Math.random()*3+'s';
- stars.appendChild(s);
-}
-function floatHeart(){
- const h=document.createElement('span');
- h.className='float';
- h.textContent=['💗','💕','💖','✨'][Math.floor(Math.random()*4)];
- h.style.left=Math.random()*100+'%';
- h.style.animationDuration=(5+Math.random()*4)+'s';
- document.getElementById('hearts').appendChild(h);
- setTimeout(()=>h.remove(),9500);
-}
-setInterval(floatHeart,650);
 
-function openSurprise(){
- document.getElementById('intro').classList.add('hidden');
- document.getElementById('surprise').classList.remove('hidden');
- window.scrollTo({top:0,behavior:'smooth'});
-}
-function showFinal(){
- document.getElementById('final').classList.remove('hidden');
+// Stars
+const stars = document.getElementById("stars");
+
+for (let i = 0; i < 35; i++) {
+  const s = document.createElement("span");
+
+  s.textContent = "✦";
+  s.style.left = Math.random() * 100 + "%";
+  s.style.top = Math.random() * 100 + "%";
+  s.style.fontSize = (8 + Math.random() * 10) + "px";
+  s.style.animationDelay = Math.random() * 3 + "s";
+
+  stars.appendChild(s);
 }
 
-const photos=['photo1.jpg'];
-let photoIndex=0;
-const slideshow=document.getElementById('slideshow');
+// Floating hearts
+function floatHeart() {
+  const h = document.createElement("span");
+
+  h.className = "float";
+  h.textContent = ["💗", "💕", "💖", "✨"][
+    Math.floor(Math.random() * 4)
+  ];
+
+  h.style.left = Math.random() * 100 + "%";
+  h.style.animationDuration = (5 + Math.random() * 4) + "s";
+
+  document.getElementById("hearts").appendChild(h);
+
+  setTimeout(() => h.remove(), 9500);
+}
+
+setInterval(floatHeart, 650);
+
+// Open surprise and play music
+function openSurprise() {
+
+  document.getElementById("intro").classList.add("hidden");
+
+  document.getElementById("surprise").classList.remove("hidden");
+
+  const song = document.getElementById("ourSong");
+
+  song.play().catch(error => {
+    console.log("Audio playback was blocked:", error);
+  });
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+
+// Final message
+function showFinal() {
+  document.getElementById("final").classList.remove("hidden");
+}
+
 </script>
+
 </body>
 </html>
 
